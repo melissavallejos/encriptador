@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="nav-container">
+                <a class="navbar-brand" href="index.html">
+                    <img class="img-logo" src="./images/logo.png" alt="logo-alura">
+                </a>
+                <ul class="nav-links">
+                    <li><a id="nav-home" href="index.html">Mensaje</a></li>
+                    <li><a id="nav-about" href="about.html">Sobre mí</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <h1 class="title">Encriptador de texto</h1>
+        <section class="main-section">
+            <div class="container-left">
+                <h2 class="subtitle">Ingresa el texto aquí</h2>
+                <textarea class="entrada-texto" id="area-origin" cols="30" rows="10" placeholder="Escribe aquí ..."></textarea>
+                <br>
+                <br>
+                <p>⚠ Solo letras minúsculas y sin acentos.</p>
+                <div class="div-btn">
+                    <input type="button" class="btn" id="btn-encode" value="Encriptar">
+                    
+                    <input type="button" class="btn" id="btn-decode" value="Desencriptar">
+                    </div>
+            </div>
+
+            <div class="container-right">
+                  <div id="result-container">
+                  <h2 class="texto1">Ningún mensaje fue encontrado</h2>
+                  <textarea class="salida-texto" cols="20" rows="10" disabled style="display: none" ></textarea>
+                    <br>
+                    <img id="search-image" src="./images/buscar.png" alt="buscar">
+                    <br><br><br>
+                    <p class="texto2">Ingresa el texto que desees encriptar o desencriptar.</p>
+                    
+                    <button name="copiar" class="copiar" id="btn-copy" onclick="copiar()" style="display: none;"><span
+                        class="anuncio"></span>Copiar</button>
+
+                    
+                 </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p class="footer-paragraph">&copy; 2024 Todos los derechos reservados. Desarrollado por <strong class="strong-josedev">Melissa Vallejos</strong>.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
